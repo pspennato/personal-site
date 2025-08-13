@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "name": "Pablo Spennato",
+    "title": "Consultor en Migraciones e Infraestructura",
+    "services": {
+      "migration": "Modernización de sistemas legacy",
+      "firmware": "Desarrollo de firmware embebido", 
+      "leadership": "Liderazgo de equipos técnicos"
+    },
+    "experience": "años dirigiendo transformaciones empresariales",
+    "location": "Mar del Plata, Argentina"
+  },
+  "services": {
+    "title": "Servicios Especializados",
+    "subtitle": "Soluciones integrales para la modernización de sistemas críticos",
+    "items": {
+      "migration": {
+        "title": "Legacy Migration & Modernization",
+        "description": "Transformación completa de sistemas obsoletos hacia tecnologías modernas, minimizando riesgos y garantizando continuidad operacional."
+      },
+      "cloud": {
+        "title": "Cloud Infrastructure Architecture", 
+        "description": "Diseño y implementación de arquitecturas escalables en AWS, Azure y GCP, optimizadas para alto rendimiento y costos controlados."
+      },
+      "leadership": {
+        "title": "Technical Team Leadership",
+        "description": "Dirección y coordinación de equipos de ingeniería, gestión de proyectos críticos y mentoría técnica especializada."
+      },
+      "integration": {
+        "title": "System Integration & Optimization",
+        "description": "Integración de sistemas complejos, optimización de performance y consolidación de infraestructuras empresariales."
+      }
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": {
+      "intro": "Durante 25 años he estado formando ingenieros en la Universidad Nacional de Mar del Plata, en las carreras de Ingeniería en Computación y en Electrónica.",
+      "approach": "Esta experiencia académica, combinada con el trabajo continuo en proyectos industriales, me ha permitido desarrollar una perspectiva única que une el rigor metodológico con la aplicación práctica.",
+      "leadership": "He dirigido equipos multidisciplinarios en proyectos de infraestructura crítica, donde la planificación sistemática y la gestión de riesgos son fundamentales para el éxito.",
+      "expertise": "Mi especialización se centra en la modernización de sistemas legacy y el desarrollo de firmware embebido, especialmente en entornos donde la continuidad operacional es crítica.",
+      "conclusion": "El enfoque metodológico que caracteriza mi trabajo se refleja en cada proyecto:",
+      "value": "soluciones robustas que abordan la complejidad desde una perspectiva integral y sostenible."
+    }
+  },
+  "contact": {
+    "title": "Contacto Profesional",
+    "subtitle": "Solicitud de Consulta",
+    "description": "Disponible para consultoria tecnica, desarrollo de proyectos de ingenieria y colaboraciones estrategicas en tecnologia.",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Direccion de correo electronico",
+      "company": "Empresa u organizacion",
+      "message": "Descripcion del proyecto o consulta tecnica",
+      "submit": "Enviar Solicitud",
+      "sending": "Enviando..."
+    },
+    "info": {
+      "email": "Correo Electronico",
+      "location": "Ubicacion",
+      "linkedin": "Perfil Profesional", 
+      "github": "Repositorio Tecnico"
+    },
+    "messages": {
+      "success": "✓ Mensaje enviado correctamente. Respondere en breve.",
+      "error": "✗ Error al enviar el mensaje. Por favor, intenta nuevamente."
+    },
+    "guarantee": "Respuesta garantizada en un plazo maximo de 48 horas habiles.",
+    "footer": "© 2025 Pablo Spennato • Ingenieria de Sistemas y Electronica • Consultoria Tecnica Especializada"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios", 
+    "about": "Acerca de",
+    "techStack": "Tech Stack",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+}
