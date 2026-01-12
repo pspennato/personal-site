@@ -108,9 +108,9 @@ function AboutMe() {
           >
             <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-gray-800 rounded-lg overflow-hidden">
               <picture>
-                <source srcSet="/image.webp" type="image/webp" />
+                <source srcSet="/profile.webp" type="image/webp" />
                 <Image
-                  src="/image.jpg"
+                  src="/profile.png"
                   alt="Pablo Spennato"
                   width={320}
                   height={320}
