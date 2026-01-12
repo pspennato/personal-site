@@ -40,8 +40,8 @@ function Contact() {
       console.log('Enviando mail...', formData);
       
       const result = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_EMAILJS_TEMPLATE_ID!,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -49,7 +49,7 @@ function Contact() {
           message: formData.message,
           to_email: 'pdspennato@gmail.com',
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_EMAILJS_PUBLIC_KEY!
       );
 
       console.log('Resultado:', result);
