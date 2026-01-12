@@ -1,11 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { 
-  ArrowRightLeft, 
-  Cloud, 
-  Users, 
-  Settings 
+import {
+  ArrowRightLeft,
+  Cpu,
+  Users,
+  Settings
 } from 'lucide-react';
 
 function Services() {
@@ -18,8 +18,8 @@ function Services() {
       color: 'text-blue-400'
     },
     {
-      icon: Cloud,
-      key: 'cloud',
+      icon: Cpu,
+      key: 'iot',
       color: 'text-green-400'
     },
     {

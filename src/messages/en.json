@@ -4,10 +4,10 @@
     "title": "Migration & Infrastructure Consultant",
     "services": {
       "migration": "Legacy systems modernization",
-      "firmware": "Embedded firmware development", 
+      "firmware": "Embedded firmware development",
       "leadership": "Technical team leadership"
     },
-    "experience": "years leading enterprise transformations",
+    "experience": "30+ years leading enterprise transformations",
     "location": "Mar del Plata, Argentina"
   },
   "services": {
@@ -18,9 +18,9 @@
         "title": "Legacy Migration & Modernization",
         "description": "Complete transformation of obsolete systems to modern technologies, minimizing risks and ensuring operational continuity."
       },
-      "cloud": {
-        "title": "Cloud Infrastructure Architecture", 
-        "description": "Design and implementation of scalable architectures on AWS, Azure and GCP, optimized for high performance and controlled costs."
+      "iot": {
+        "title": "Embedded Firmware & IoT Development",
+        "description": "Embedded firmware development and IoT solutions across multiple platforms (ESP, Nordic, STM, TI, Altera). Hardware integration with enterprise systems and industrial protocols."
       },
       "leadership": {
         "title": "Technical Team Leadership",
@@ -35,7 +35,8 @@
   "about": {
     "title": "About Me",
     "paragraphs": {
-      "intro": "For 25 years I have been training engineers at the National University of Mar del Plata, in Computer Engineering and Electronics programs.",
+      "intro": "For 23 years I have been training engineers at the National University of Mar del Plata, in Computer Engineering and Electronics programs.",
+      "legacy": "My journey in systems development began in 1993 working with COBOL and indexed files in administrative accounting systems. This early experience with legacy technologies gave me a deep understanding of the challenges companies face when modernizing critical infrastructures.",
       "approach": "This academic experience, combined with continuous work on industrial projects, has allowed me to develop a unique perspective that bridges methodological rigor with practical application.",
       "leadership": "I have led multidisciplinary teams on critical infrastructure projects, where systematic planning and risk management are fundamental to success.",
       "expertise": "My specialization focuses on legacy systems modernization and embedded firmware development, especially in environments where operational continuity is critical.",
@@ -96,13 +97,13 @@
         "title": "Horse Farm Management System",
         "description": "Complete platform for horse farm administration. Genealogy, breeding, training and finance management with scalable architecture."
       },
-      "estacionamiento-medido": {
-        "title": "Mar del Plata Parking Meter System",
-        "description": "Complete parking meter management system for Mar del Plata city. University extension project with full web architecture."
-      },
       "woki-app": {
         "title": "Woki Application (CTO/Founder)",
         "description": "Mobile application developed with Clean Architecture. Complete technical leadership from architecture to implementation with modern technologies."
+      },
+      "estacionamiento-medido": {
+        "title": "Mar del Plata Parking Meter System",
+        "description": "Complete parking meter management system for Mar del Plata city. University extension project with full web architecture."
       },
       "genomics-software": {
         "title": "Genomic Analysis Software (BioMath Solutions)",
@@ -117,7 +118,7 @@
     "layers": {
       "embedded": {
         "layer": "Embedded & Hardware",
-        "experience": "23+ years",
+        "experience": "15+ years",
         "projects": "projects"
       },
       "backend": {

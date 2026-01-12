@@ -32,7 +32,7 @@ function AboutMe() {
           {/* Texto */}
           <div className="space-y-6 md:space-y-8 text-gray-300 order-2 lg:order-1">
             
-            <motion.p 
+            <motion.p
               className="text-base sm:text-lg md:text-xl font-light leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -41,42 +41,52 @@ function AboutMe() {
             >
               {t('about.paragraphs.intro')}
             </motion.p>
-            
-            <motion.p 
+
+            <motion.p
               className="text-base sm:text-lg md:text-xl font-light leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              {t('about.paragraphs.approach')}
+              {t('about.paragraphs.legacy')}
             </motion.p>
-            
-            <motion.p 
+
+            <motion.p
               className="text-base sm:text-lg md:text-xl font-light leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              {t('about.paragraphs.leadership')}
+              {t('about.paragraphs.approach')}
             </motion.p>
             
-            <motion.p 
+            <motion.p
               className="text-base sm:text-lg md:text-xl font-light leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              {t('about.paragraphs.expertise')}
+              {t('about.paragraphs.leadership')}
             </motion.p>
-            
-            <motion.div 
-              className="pt-4 md:pt-8"
+
+            <motion.p
+              className="text-base sm:text-lg md:text-xl font-light leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              {t('about.paragraphs.expertise')}
+            </motion.p>
+
+            <motion.div
+              className="pt-4 md:pt-8"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed">
