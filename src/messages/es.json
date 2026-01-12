@@ -70,10 +70,75 @@
   },
   "navigation": {
     "home": "Inicio",
-    "services": "Servicios", 
+    "services": "Servicios",
     "about": "Acerca de",
     "techStack": "Tech Stack",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Proyectos Destacados",
+    "buttons": {
+      "code": "Código",
+      "demo": "Ver Demo"
+    },
+    "items": {
+      "Chlab-iot": {
+        "title": "CreaLab - Sistema Industrial IoT",
+        "description": "Aplicación móvil multiplataforma para monitoreo en tiempo real de equipos industriales. Conectividad Bluetooth LE, arquitectura multi-tenant, protocolo de comunicación personalizado con comandos hexadecimales y sincronización automática."
+      },
+      "glance-demo-firmware": {
+        "title": "Glance-Demo - Firmware IoT E-Paper",
+        "description": "Firmware embebido completo para nRF52832 con pantalla e-paper táctil. Sistema de widgets dinámicos configurable via JSON, comunicación BLE bidireccional, manejo dual I2C/SPI y procesamiento de imágenes en tiempo real."
+      },
+      "haras-management": {
+        "title": "Sistema de Gestión de Haras",
+        "description": "Plataforma completa para administración de haras de caballos. Gestión de genealogía, reproducción, entrenamiento y finanzas con arquitectura escalable."
+      },
+      "estacionamiento-medido": {
+        "title": "Sistema de Estacionamiento Medido Mar del Plata",
+        "description": "Sistema completo de gestión de estacionamiento medido para la ciudad de Mar del Plata. Proyecto de extensión universitaria con arquitectura web completa."
+      },
+      "woki-app": {
+        "title": "Aplicación Woki (CTO/Founder)",
+        "description": "Aplicación móvil desarrollada con Clean Architecture. Liderazgo técnico completo desde arquitectura hasta implementación con tecnologías modernas."
+      },
+      "genomics-software": {
+        "title": "Software Análisis Genómico (BioMath Solutions)",
+        "description": "Sistema para análisis de datos genómicos mediante micro-arrays. Proyecto internacional en Texas, Estados Unidos, con procesamiento avanzado de datos biológicos."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Experiencia Técnica Integral",
+    "summary": "Más de dos décadas de experiencia en desarrollo de sistemas complejos, desde firmware embebido hasta aplicaciones empresariales escalables.",
+    "layers": {
+      "embedded": {
+        "layer": "Embedded & Hardware",
+        "experience": "23+ años",
+        "projects": "proyectos"
+      },
+      "backend": {
+        "layer": "Backend & Systems",
+        "experience": "20+ años",
+        "projects": "proyectos"
+      },
+      "mobile": {
+        "layer": "Mobile & Frontend",
+        "experience": "8+ años",
+        "projects": "proyectos"
+      },
+      "specialized": {
+        "layer": "Specialized Systems",
+        "experience": "15+ años",
+        "projects": "proyectos"
+      }
+    }
+  },
+  "metadata": {
+    "title": "Pablo Spennato | Consultor en Migraciones e Infraestructura",
+    "description": "Consultor especializado en modernización de sistemas legacy, desarrollo de firmware embebido y liderazgo técnico. 25 años de experiencia en ingeniería de sistemas."
   }
 }

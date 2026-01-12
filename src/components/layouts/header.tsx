@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t } = useTranslation();
   const [currentSection, setCurrentSection] = useState('hero');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -79,35 +81,35 @@ function Header() {
         {/* Navegación Desktop */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
           <nav className="flex gap-6 lg:gap-8">
-            <button 
+            <button
               onClick={() => scrollToSection('services')}
               className="text-gray-400 hover:text-white transition-colors text-sm lg:text-base font-light"
             >
-              Services
+              {t('navigation.services')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('about')}
               className="text-gray-400 hover:text-white transition-colors text-sm lg:text-base font-light"
             >
-              About Me
+              {t('navigation.about')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('tech-stack')}
               className="text-gray-400 hover:text-white transition-colors text-sm lg:text-base font-light"
             >
-              Tech Stack
+              {t('navigation.techStack')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('projects')}
               className="text-gray-400 hover:text-white transition-colors text-sm lg:text-base font-light"
             >
-              Projects
+              {t('navigation.projects')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-400 hover:text-white transition-colors text-sm lg:text-base font-light"
             >
-              Contact
+              {t('navigation.contact')}
             </button>
           </nav>
           
@@ -139,35 +141,35 @@ function Header() {
           transition={{ duration: 0.3 }}
         >
           <nav className="flex flex-col py-4">
-            <button 
+            <button
               onClick={() => scrollToSection('services')}
               className="text-gray-400 hover:text-white transition-colors py-3 px-4 text-left font-light"
             >
-              Services
+              {t('navigation.services')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('about')}
               className="text-gray-400 hover:text-white transition-colors py-3 px-4 text-left font-light"
             >
-              About Me
+              {t('navigation.about')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('tech-stack')}
               className="text-gray-400 hover:text-white transition-colors py-3 px-4 text-left font-light"
             >
-              Tech Stack
+              {t('navigation.techStack')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('projects')}
               className="text-gray-400 hover:text-white transition-colors py-3 px-4 text-left font-light"
             >
-              Projects
+              {t('navigation.projects')}
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-400 hover:text-white transition-colors py-3 px-4 text-left font-light"
             >
-              Contact
+              {t('navigation.contact')}
             </button>
           </nav>
         </motion.div>

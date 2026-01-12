@@ -70,10 +70,75 @@
   },
   "navigation": {
     "home": "Home",
-    "services": "Services", 
+    "services": "Services",
     "about": "About",
     "techStack": "Tech Stack",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured Work",
+    "buttons": {
+      "code": "Code",
+      "demo": "View Demo"
+    },
+    "items": {
+      "Chlab-iot": {
+        "title": "CreaLab - Industrial IoT System",
+        "description": "Cross-platform mobile application for real-time industrial equipment monitoring. Bluetooth LE connectivity, multi-tenant architecture, custom communication protocol with hexadecimal commands and automatic synchronization."
+      },
+      "glance-demo-firmware": {
+        "title": "Glance-Demo - IoT E-Paper Firmware",
+        "description": "Complete embedded firmware for nRF52832 with touch e-paper display. Dynamic widget system configurable via JSON, bidirectional BLE communication, dual I2C/SPI handling and real-time image processing."
+      },
+      "haras-management": {
+        "title": "Horse Farm Management System",
+        "description": "Complete platform for horse farm administration. Genealogy, breeding, training and finance management with scalable architecture."
+      },
+      "estacionamiento-medido": {
+        "title": "Mar del Plata Parking Meter System",
+        "description": "Complete parking meter management system for Mar del Plata city. University extension project with full web architecture."
+      },
+      "woki-app": {
+        "title": "Woki Application (CTO/Founder)",
+        "description": "Mobile application developed with Clean Architecture. Complete technical leadership from architecture to implementation with modern technologies."
+      },
+      "genomics-software": {
+        "title": "Genomic Analysis Software (BioMath Solutions)",
+        "description": "System for genomic data analysis through micro-arrays. International project in Texas, United States, with advanced biological data processing."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Comprehensive Technical Expertise",
+    "summary": "Over two decades of experience in complex systems development, from embedded firmware to scalable enterprise applications.",
+    "layers": {
+      "embedded": {
+        "layer": "Embedded & Hardware",
+        "experience": "23+ years",
+        "projects": "projects"
+      },
+      "backend": {
+        "layer": "Backend & Systems",
+        "experience": "20+ years",
+        "projects": "projects"
+      },
+      "mobile": {
+        "layer": "Mobile & Frontend",
+        "experience": "8+ years",
+        "projects": "projects"
+      },
+      "specialized": {
+        "layer": "Specialized Systems",
+        "experience": "15+ years",
+        "projects": "projects"
+      }
+    }
+  },
+  "metadata": {
+    "title": "Pablo Spennato | Migration & Infrastructure Consultant",
+    "description": "Consultant specialized in legacy systems modernization, embedded firmware development and technical leadership. 25 years of experience in systems engineering."
   }
 }

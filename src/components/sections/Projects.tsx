@@ -2,8 +2,10 @@
 import { projects } from '../../data/projects';
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextProject = () => {
@@ -22,7 +24,7 @@ function Projects() {
         
         {/* Título */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-12 md:mb-16 tracking-tight">
-          Projects
+          {t('projects.title')}
         </h2>
         
         {/* Slider principal */}
@@ -50,10 +52,10 @@ function Projects() {
             </div>
             
             <h3 className="text-xl sm:text-2xl md:text-3xl font-light text-white mb-3 md:mb-4 tracking-tight">
-              {currentProject.title}
+              {t(`projects.items.${currentProject.id}.title`)}
             </h3>
             <p className="text-gray-300 mb-4 md:mb-6 text-sm sm:text-base md:text-lg lg:text-xl font-light leading-relaxed">
-              {currentProject.description}
+              {t(`projects.items.${currentProject.id}.description`)}
             </p>
             
             {/* Tecnologías */}
@@ -70,13 +72,13 @@ function Projects() {
               {currentProject.repository && (
                 <a href={currentProject.repository} className="flex items-center justify-center sm:justify-start gap-2 px-3 md:px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
                   <Github className="w-3 h-3 md:w-4 md:h-4" />
-                  <span className="font-light text-sm md:text-base">Código</span>
+                  <span className="font-light text-sm md:text-base">{t('projects.buttons.code')}</span>
                 </a>
               )}
               {currentProject.demo && (
                 <a href={currentProject.demo} className="flex items-center justify-center sm:justify-start gap-2 px-3 md:px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors">
                   <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
-                  <span className="font-light text-sm md:text-base">Ver Demo</span>
+                  <span className="font-light text-sm md:text-base">{t('projects.buttons.demo')}</span>
                 </a>
               )}
             </div>
@@ -108,8 +110,8 @@ function Projects() {
                   : 'bg-gray-800 hover:bg-gray-700'
               }`}
             >
-              <h4 className="font-light mb-2 text-sm md:text-base">{project.title}</h4>
-              <p className="text-xs md:text-sm text-gray-400 truncate font-light">{project.description}</p>
+              <h4 className="font-light mb-2 text-sm md:text-base">{t(`projects.items.${project.id}.title`)}</h4>
+              <p className="text-xs md:text-sm text-gray-400 truncate font-light">{t(`projects.items.${project.id}.description`)}</p>
             </div>
           ))}
         </div>

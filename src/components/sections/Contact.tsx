@@ -3,8 +3,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -70,7 +72,7 @@ function Contact() {
         
         {/* Titulo */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-12 md:mb-16 tracking-tight">
-          Contacto Profesional
+          {t('contact.title')}
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
@@ -85,8 +87,7 @@ function Contact() {
           >
             <div className="mb-8">
               <p className="text-base sm:text-lg md:text-xl font-light leading-relaxed text-gray-300">
-                Disponible para consultoria tecnica, desarrollo de proyectos de ingenieria 
-                y colaboraciones estrategicas en tecnologia.
+                {t('contact.description')}
               </p>
             </div>
 
@@ -95,9 +96,9 @@ function Contact() {
               <div className="flex items-center gap-3 md:gap-4">
                 <Mail className="w-4 h-4 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-500 text-xs md:text-sm font-light">Correo Electronico</p>
-                  <a 
-                    href="mailto:pdspennato@gmail.com" 
+                  <p className="text-gray-500 text-xs md:text-sm font-light">{t('contact.info.email')}</p>
+                  <a
+                    href="mailto:pdspennato@gmail.com"
                     className="text-gray-300 font-light hover:text-white transition-colors text-sm md:text-base break-all"
                   >
                     pdspennato@gmail.com
@@ -108,7 +109,7 @@ function Contact() {
               <div className="flex items-center gap-3 md:gap-4">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-500 text-xs md:text-sm font-light">Ubicacion</p>
+                  <p className="text-gray-500 text-xs md:text-sm font-light">{t('contact.info.location')}</p>
                   <p className="text-gray-300 font-light text-sm md:text-base">Mar del Plata, Buenos Aires, Argentina</p>
                 </div>
               </div>
@@ -116,9 +117,9 @@ function Contact() {
               <div className="flex items-center gap-3 md:gap-4">
                 <Linkedin className="w-4 h-4 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-500 text-xs md:text-sm font-light">Perfil Profesional</p>
-                  <a 
-                    href="https://www.linkedin.com/in/pdspennato" 
+                  <p className="text-gray-500 text-xs md:text-sm font-light">{t('contact.info.linkedin')}</p>
+                  <a
+                    href="https://www.linkedin.com/in/pdspennato"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 font-light hover:text-white transition-colors text-sm md:text-base"
@@ -131,9 +132,9 @@ function Contact() {
               <div className="flex items-center gap-3 md:gap-4">
                 <Github className="w-4 h-4 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-500 text-xs md:text-sm font-light">Repositorio Tecnico</p>
-                  <a 
-                    href="https://github.com/pspennato" 
+                  <p className="text-gray-500 text-xs md:text-sm font-light">{t('contact.info.github')}</p>
+                  <a
+                    href="https://github.com/pspennato"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 font-light hover:text-white transition-colors text-sm md:text-base"
@@ -155,85 +156,85 @@ function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl font-light text-white mb-6 md:mb-8 tracking-tight">
-              Solicitud de Consulta
+              {t('contact.subtitle')}
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Nombre completo"
-                  className="w-full p-3 md:p-4 bg-transparent border border-gray-800 rounded-lg text-white font-light placeholder-gray-500 focus:border-gray-600 focus:outline-none transition-colors text-sm md:text-base"
-                  required
-                />
-              </div>
-              
-              <div>
-                <input 
-                  type="email" 
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Direccion de correo electronico"
+                  placeholder={t('contact.form.name')}
                   className="w-full p-3 md:p-4 bg-transparent border border-gray-800 rounded-lg text-white font-light placeholder-gray-500 focus:border-gray-600 focus:outline-none transition-colors text-sm md:text-base"
                   required
                 />
               </div>
 
               <div>
-                <input 
-                  type="text" 
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder={t('contact.form.email')}
+                  className="w-full p-3 md:p-4 bg-transparent border border-gray-800 rounded-lg text-white font-light placeholder-gray-500 focus:border-gray-600 focus:outline-none transition-colors text-sm md:text-base"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Empresa u organizacion"
+                  placeholder={t('contact.form.company')}
                   className="w-full p-3 md:p-4 bg-transparent border border-gray-800 rounded-lg text-white font-light placeholder-gray-500 focus:border-gray-600 focus:outline-none transition-colors text-sm md:text-base"
                 />
               </div>
-              
+
               <div>
-                <textarea 
+                <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Descripcion del proyecto o consulta tecnica"
+                  placeholder={t('contact.form.message')}
                   rows={4}
                   className="w-full p-3 md:p-4 bg-transparent border border-gray-800 rounded-lg text-white font-light placeholder-gray-500 focus:border-gray-600 focus:outline-none transition-colors resize-none text-sm md:text-base"
                   required
                 />
               </div>
               
-              <button 
+              <button
                 type="submit"
                 disabled={isLoading}
                 className={`w-full p-3 md:p-4 bg-transparent border border-gray-600 rounded-lg text-white font-light transition-colors text-sm md:text-base ${
-                  isLoading 
-                    ? 'opacity-50 cursor-not-allowed' 
+                  isLoading
+                    ? 'opacity-50 cursor-not-allowed'
                     : 'hover:bg-gray-800'
                 }`}
               >
-                {isLoading ? 'Enviando...' : 'Enviar Solicitud'}
+                {isLoading ? t('contact.form.sending') : t('contact.form.submit')}
               </button>
             </form>
 
             {/* Mensajes de estado */}
             {status === 'success' && (
               <p className="text-green-400 text-sm font-light">
-                ✓ Mensaje enviado correctamente. Respondere en breve.
+                {t('contact.messages.success')}
               </p>
             )}
-            
+
             {status === 'error' && (
               <p className="text-red-400 text-sm font-light">
-                ✗ Error al enviar el mensaje. Por favor, intenta nuevamente.
+                {t('contact.messages.error')}
               </p>
             )}
 
             <p className="text-gray-500 text-xs font-light mt-4">
-              Respuesta garantizada en un plazo maximo de 48 horas habiles.
+              {t('contact.guarantee')}
             </p>
           </motion.div>
           
@@ -248,7 +249,7 @@ function Contact() {
           viewport={{ once: true }}
         >
           <p className="text-gray-500 text-xs sm:text-sm font-light">
-            © 2025 Pablo Spennato • Ingenieria de Sistemas y Electronica • Consultoria Tecnica Especializada
+            {t('contact.footer')}
           </p>
         </motion.div>
         

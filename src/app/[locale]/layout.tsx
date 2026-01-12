@@ -21,13 +21,11 @@ export default function LocaleLayout({
     if (locale && i18n.language !== locale) {
       i18n.changeLanguage(locale);
     }
+    // Update the html lang attribute
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = locale;
+    }
   }, [locale, i18n]);
 
-  return (
-    <html lang={locale}>
-      <body>
-        {children}
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }

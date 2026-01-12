@@ -2,6 +2,7 @@
 import { techStack } from '../../data/skills';
 import { Cpu, Server, Globe, Zap } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const iconMap: { [key: string]: LucideIcon } = {
   'Cpu': Cpu,
@@ -11,13 +12,15 @@ const iconMap: { [key: string]: LucideIcon } = {
 };
 
 function TechStack() {
+  const { t } = useTranslation();
+
   return (
     <section id="tech-stack" className="py-16 md:py-20 px-4 md:px-8 lg:px-16 relative">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Título */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-12 md:mb-16 tracking-tight">
-          Tech Stack
+          {t('techStack.title')}
         </h2>
         
         {/* Línea lateral - solo desktop */}
@@ -46,7 +49,7 @@ function TechStack() {
                           {layer.layer}
                         </h3>
                         <p className="text-gray-500 text-xs sm:text-sm font-light">
-                          {layer.experience} • {layer.projects} proyectos
+                          {layer.experience} • {layer.projects} {t('techStack.layers.' + layer.layer.toLowerCase().replace(/ & /g, '').replace(/ /g, '') + '.projects')}
                         </p>
                       </div>
                     </div>
@@ -74,9 +77,7 @@ function TechStack() {
         {/* Resumen */}
         <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-gray-800">
           <p className="text-base sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed max-w-3xl">
-            Desde firmware embebido hasta aplicaciones web escalables. 
-            <br className="hidden sm:block" />
-            Experiencia integral en cada capa del stack tecnológico.
+            {t('techStack.summary')}
           </p>
         </div>
         
