@@ -11,7 +11,8 @@ function Contact() {
     name: '',
     email: '',
     company: '',
-    message: ''
+    message: '',
+    website: '' // Honeypot field
   });
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState('');
@@ -28,6 +29,29 @@ function Contact() {
     setIsLoading(true);
     setStatus('');
 
+    // Honeypot protection - if website field is filled, it's a bot
+    if (formData.website) {
+      console.log('Bot detected via honeypot');
+      setIsLoading(false);
+      // Fake success to fool bots
+      setStatus('success');
+      setTimeout(() => setStatus(''), 3000);
+      return;
+    }
+
+    // Rate limiting - check last submission time
+    const lastSubmitTime = localStorage.getItem('lastContactSubmit');
+    const now = Date.now();
+    const cooldownPeriod = 60000; // 60 seconds
+
+    if (lastSubmitTime && now - parseInt(lastSubmitTime) < cooldownPeriod) {
+      const remainingTime = Math.ceil((cooldownPeriod - (now - parseInt(lastSubmitTime))) / 1000);
+      setStatus('ratelimit');
+      setIsLoading(false);
+      console.log(`Rate limited. Try again in ${remainingTime} seconds`);
+      return;
+    }
+
     // Validacion basica
     if (!formData.name || !formData.email || !formData.message) {
       setStatus('error');
@@ -38,7 +62,7 @@ function Contact() {
     try {
       // Configuracion de EmailJS usando variables de entorno
       console.log('Enviando mail...', formData);
-      
+
       const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -55,7 +79,9 @@ function Contact() {
       console.log('Resultado:', result);
       if (result.status === 200) {
         setStatus('success');
-        setFormData({ name: '', email: '', company: '', message: '' });
+        setFormData({ name: '', email: '', company: '', message: '', website: '' });
+        // Store submission time for rate limiting
+        localStorage.setItem('lastContactSubmit', now.toString());
       }
     } catch (error) {
       console.error('Error enviando mail:', error);
@@ -160,6 +186,18 @@ function Contact() {
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              {/* Honeypot field - hidden from users, visible to bots */}
+              <div style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
+                <input
+                  type="text"
+                  name="website"
+                  value={formData.website}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               <div>
                 <input
                   type="text"
@@ -230,6 +268,12 @@ function Contact() {
             {status === 'error' && (
               <p className="text-red-400 text-sm font-light">
                 {t('contact.messages.error')}
+              </p>
+            )}
+
+            {status === 'ratelimit' && (
+              <p className="text-yellow-400 text-sm font-light">
+                {t('contact.messages.ratelimit')}
               </p>
             )}
 

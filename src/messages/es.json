@@ -64,7 +64,8 @@
     },
     "messages": {
       "success": "✓ Mensaje enviado correctamente. Respondere en breve.",
-      "error": "✗ Error al enviar el mensaje. Por favor, intenta nuevamente."
+      "error": "✗ Error al enviar el mensaje. Por favor, intenta nuevamente.",
+      "ratelimit": "⏱ Por favor espera 60 segundos antes de enviar otro mensaje."
     },
     "guarantee": "Respuesta garantizada en un plazo maximo de 48 horas habiles.",
     "footer": "© 2025 Pablo Spennato • Ingenieria de Sistemas y Electronica • Consultoria Tecnica Especializada"

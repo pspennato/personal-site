@@ -64,7 +64,8 @@
     },
     "messages": {
       "success": "✓ Message sent successfully. I will respond shortly.",
-      "error": "✗ Error sending message. Please try again."
+      "error": "✗ Error sending message. Please try again.",
+      "ratelimit": "⏱ Please wait 60 seconds before sending another message."
     },
     "guarantee": "Guaranteed response within a maximum of 48 business hours.",
     "footer": "© 2025 Pablo Spennato • Systems and Electronics Engineering • Specialized Technical Consulting"
