@@ -112,8 +112,8 @@ function AboutMe() {
                 <Image
                   src="/profile.png"
                   alt="Pablo Spennato"
-                  width={192}
-                  height={288}
+                  width={632}
+                  height={786}
                   className="w-full h-auto object-contain"
                   priority
                 />
