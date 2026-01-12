@@ -33,7 +33,7 @@
     }
   },
   "about": {
-    "title": "About Me",
+    "title": "Sobre mí",
     "paragraphs": {
       "intro": "Durante 23 años he estado formando ingenieros en la Universidad Nacional de Mar del Plata, en las carreras de Ingeniería en Computación y en Electrónica.",
       "legacy": "Mi trayectoria en desarrollo de sistemas comenzó en 1993 trabajando con COBOL y archivos indexados en sistemas administrativos contables. Esta experiencia temprana con tecnologías legacy me dio una comprensión profunda de los desafíos que enfrentan las empresas al modernizar infraestructuras críticas.",
@@ -74,7 +74,7 @@
     "home": "Inicio",
     "services": "Servicios",
     "about": "Acerca de",
-    "techStack": "Tech Stack",
+    "techStack": "Tecnologías",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
