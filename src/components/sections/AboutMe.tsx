@@ -106,15 +106,15 @@ function AboutMe() {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-gray-800 rounded-lg overflow-hidden">
+            <div className="w-64 sm:w-72 md:w-80 bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
               <picture>
                 <source srcSet="/profile.webp" type="image/webp" />
                 <Image
                   src="/profile.png"
                   alt="Pablo Spennato"
-                  width={320}
-                  height={320}
-                  className="w-full h-full object-cover"
+                  width={192}
+                  height={288}
+                  className="w-full h-auto object-contain"
                   priority
                 />
               </picture>
