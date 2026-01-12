@@ -68,7 +68,7 @@ function Projects() {
             </div>
 
             {/* Enlaces */}
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               {currentProject.repository && (
                 <a href={currentProject.repository} className="flex items-center justify-center sm:justify-start gap-2 px-3 md:px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors">
                   <Github className="w-3 h-3 md:w-4 md:h-4" />
@@ -81,7 +81,7 @@ function Projects() {
                   <span className="font-light text-sm md:text-base">{t('projects.buttons.demo')}</span>
                 </a>
               )}
-            </div>
+            </div> */}
           </div>
 
           {/* Indicadores */}
