@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Pablo Spennato",
-    "title": "Consultor en Migraciones e Infraestructura",
+    "title": "Legacy Migration & Modernization",
     "services": {
       "migration": "Modernización de sistemas legacy",
       "firmware": "Desarrollo de firmware embebido",
@@ -97,10 +97,6 @@
       "haras-management": {
         "title": "Sistema de Gestión de Haras",
         "description": "Plataforma completa para administración de haras de caballos. Gestión de genealogía, reproducción, entrenamiento y finanzas con arquitectura escalable."
-      },
-      "woki-app": {
-        "title": "Aplicación Woki (CTO/Founder)",
-        "description": "Aplicación móvil desarrollada con Clean Architecture. Liderazgo técnico completo desde arquitectura hasta implementación con tecnologías modernas."
       },
       "estacionamiento-medido": {
         "title": "Sistema de Estacionamiento Medido Mar del Plata",
