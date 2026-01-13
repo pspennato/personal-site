@@ -33,13 +33,6 @@ export const projects: Project[] = [
     technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3'],
   },
   {
-    id: 'woki-app',
-    title: 'Aplicación Woki (CTO/Founder)',
-    description: 'Aplicación móvil desarrollada con Clean Architecture. Liderazgo técnico completo desde arquitectura hasta implementación con tecnologías modernas.',
-    category: 'fullstack',
-    technologies: ['Flutter', 'DART', 'TypeScript', 'Firebase', 'MongoDB', 'Clean Architecture'],
-  },
-  {
     id: 'genomics-software',
     title: 'Software Análisis Genómico (BioMath Solutions)',
     description: 'Sistema para análisis de datos genómicos mediante micro-arrays. Proyecto internacional en Texas, Estados Unidos, con procesamiento avanzado de datos biológicos.',
